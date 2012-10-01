@@ -39,7 +39,7 @@
 		
             if(text != ''){
                 
-                text = text.replace(/((\b[1-3]{0,1}\s{0,1}[a-zA-ZáéíóúâêîôûãẽĩõũÁÉÍÓÚÂÊÎÔÛÃẼŨÕŨ]{2,})\s(([0-9]{1,2})):{0,1}([0-9\-,]*))\b/gim, function($1, $2, $3, $4, $5, $6){
+                text = text.replace(/((\b[1-3]{0,1}\s{0,1}[a-zA-ZáéíóúâêîôûãẽĩõũÁÉÍÓÚÂÊÎÔÛÃẼŨÕŨ]{2,3})\s{0,1}(([0-9]{1,2})):{0,1}([0-9\-,]{0,}))\b/gim, function($1, $2, $3, $4, $5, $6){
                     
                     var new_text = '<a href="'+options.url_base+'/'+options.bible+'/'+$3+'/'+$4+'/'+$6+'" style="'+options.more_style+'" target="'+options.target+'">'+$1+'</a>'; // ['+$1+', '+$2+', '+$3+', '+$4+', '+$5+', '+$6+']
                     if(options.valid_books.indexOf($3.toUpperCase()) > -1){
