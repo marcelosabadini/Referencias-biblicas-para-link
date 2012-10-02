@@ -13,35 +13,40 @@
         <script language="javascript" type="text/javascript">
             $(document).ready(function(){
                 $('#btn').click(function(){
-                    $('#texto').bible2link();
+                    $('#texto').bible2link({
+                        onReplace: function(){
+                            
+                        }
+                    });
                 });
             });
         </script>
 
     </head>
     <body>
-        <textarea id="texto" cols="200" rows="24">Este ano é o ano de 2012. Benjamim era o filho de número 12 de Jacó, não é por acaso, mas este ano se vocês prestarem atenção a palavra de Deus quer nos ensinar muita coisa.
+        <div id="texto" >Este ano é o ano de 2012. 1cr 2.Benjamim era o filho de número 12 de Jacó, não é por acaso, mas este ano se vocês prestarem atenção a palavra de Deus quer nos ensinar muita coisa.
 Em Gênesis 49:27 conta que Jacó, ou seja Israel , chama os seus filhos e abençoa a cada um com uma benção diferenciada!Preste a atenção!
-Ele chama Benjamim e o abençoa dizendo que ele seria como um lo
+Ele chama Benjamim e o abençoa dizendo que ele seria como um lo<BR /><BR />
 
-2 timotio 2:21  fdsafsdfasaa
+2 timotio 2:21  fdsafsdfasaa<BR /><BR />
 
-1 Reis 19
+1 Reis 19<BR /><BR />
 
-joão 3:16 - João 3:16,17
+joão 3:16 - João 3:16,17<BR /><BR />
 
-mateus 2:2-10
+mateus 2:2-10<BR /><BR />
 
-1co 2 - 1co 2:2 - 1co 2:2-7
+1co 2 - 1co 2:2 - 1co 2:2-7<BR /><BR />
 
-1tm 2:1,3,5
+1tm 2:1,3,5<BR /><BR />
 
-Salmos 29  -  Sl 23:1
+Salmos 29  -  Sl 23:1<BR /><BR />
 
-jo 3
+jo 3<BR /><BR />
 
-jó 3:1-10
-</textarea>
+jó 3:1-10<BR /><BR />
+
+</div>
 <br /><br />
 <input type="button" value="Go go go!" id="btn" />
 </body>

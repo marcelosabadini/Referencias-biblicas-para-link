@@ -52,7 +52,7 @@
                 });
                 
                 // return the new text with the links
-                $(this).val(text);
+                $(this).html(text);
                 
             }
 			
